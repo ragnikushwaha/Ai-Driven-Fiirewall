@@ -1,0 +1,25 @@
+{
+    "anomaly_detection": {
+        "model_type": "isolation_forest",
+        "contamination": 0.1,
+        "n_estimators": 100,
+        "random_state": 42
+    },
+    "threat_classification": {
+        "model_type": "random_forest",
+        "n_estimators": 200,
+        "max_depth": 20,
+        "random_state": 42,
+        "class_names": ["Normal", "Port Scan", "DDoS", "Malware", "Brute Force"]
+    },
+    "training": {
+        "test_size": 0.2,
+        "random_state": 42,
+        "cross_validation_folds": 5
+    },
+    "thresholds": {
+        "anomaly_confidence": 0.85,
+        "block_confidence": 0.80,
+        "retraining_interval": 86400
+    }
+}
