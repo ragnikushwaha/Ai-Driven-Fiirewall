@@ -1,0 +1,21 @@
+firewall:
+  interface: "eth0"
+  max_packets_per_second: 10000
+  block_duration: 3600
+  
+ml_model:
+  model_type: "ensemble"
+  training_interval: 86400
+  confidence_threshold: 0.85
+  
+anomaly_detection:
+  window_size: 100
+  threshold_multiplier: 2.0
+  
+logging:
+  level: "INFO"
+  file_path: "/var/log/ai_firewall.log"
+  
+dashboard:
+  port: 8080
+  refresh_interval: 5
