@@ -1,4 +1,4 @@
-# Ai-Driven-Fiirewall
+# Ai-Driven-Firewall
 Hello, this is an ai-driven firewall
 
 1. Clone the repository:
